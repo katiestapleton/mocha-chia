@@ -8,24 +8,30 @@ sayHelloResult = app.sayHello();
 addNumbersResult = app.addNumbers(5, 5);
 
 describe('app', function(){
-    it('sayHello should return hello', function(){
-        //let result = app.appsayHello();
-        assert.equal(sayHelloResult, 'hello');
+    //nesting
+    describe('sayHello', function(){
+        it('sayHello should return hello', function(){
+            //let result = app.appsayHello();
+            assert.equal(sayHelloResult, 'hello');
+        });
+
+        it('sayHello should return type string', function(){
+            //let result = app.sayHello();
+            assert.typeOf(sayHelloResult, 'string');
+        })
     });
 
-    it('sayHello should return type string', function(){
-        //let result = app.sayHello();
-        assert.typeOf(sayHelloResult, 'string');
-    })
+    //nesting
+    describe('addNumbers', function(){
+        it('add numbers should be above 5', function(){
+            //let result = app.addNumbers(5,5);
+            assert.isAbove(addNumbersResult, 5);
+        })
 
-    it('add numbers should be above k', function(){
-        //let result = app.addNumbers(5,5);
-        assert.isAbove(addNumberResult, 5);
-    })
-
-    it('sayNumbers should return type string', function(){
-        //let result = app.addNumbers();
-        assert.typeOf(addNumberResult, 'number');
-    })
+        it('addNumbers should return type number', function(){
+            //let result = app.addNumbers();
+            assert.typeOf(addNumbersResult, 'number');
+        })
+    });
 
 });
