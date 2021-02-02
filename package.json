@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/katiestapleton/mocha-chia/issues"
   },
-  "homepage": "https://github.com/katiestapleton/mocha-chia#readme"
+  "homepage": "https://github.com/katiestapleton/mocha-chia#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chair": "0.0.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.1.0"
+  }
 }
