@@ -1,0 +1,19 @@
+{
+  "name": "mocha-chia",
+  "version": "1.0.0",
+  "description": "coding a unit test",
+  "main": "mocha_text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiestapleton/mocha-chia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiestapleton/mocha-chia/issues"
+  },
+  "homepage": "https://github.com/katiestapleton/mocha-chia#readme"
+}
